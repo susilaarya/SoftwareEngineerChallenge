@@ -1,0 +1,60 @@
+import java.util.LinkedList; 
+import java.util.Queue; 
+
+public class Mytask1 {
+
+  public static String setQueueHead(){
+      
+      String head = "A,B,C,D,E";
+      return head;
+  }
+
+  //Display contents of the queue
+  public static Queue<String> enQueue(String queueHead) {
+    Queue<String> queue = new LinkedList<>();
+    
+    String[] ary = queueHead.split(",");
+    for (int i = 0; i < ary.length; i++){
+        queue.add(ary[i]);
+    }
+    
+    return queue;
+  }
+  
+  public static Queue<String> deQueue(){
+    
+    String inntQueueHead = setQueueHead();
+    Queue<String> queue = enQueue(inntQueueHead);
+    
+    // To remove the head of queue. 
+    String removedele = queue.remove(); 
+    System.out.println("removed element=>>" + removedele); 
+  
+    System.out.println(queue); 
+  
+    // To view the head of queue 
+    String head = queue.peek(); 
+    System.out.println("head of queue=>>" + head); 
+  
+    // Rest all methods of collection interface, 
+    // Like size and contains can be used with this 
+    // implementation. 
+    int size = queue.size(); 
+    System.out.println("Size of queue=>>" + size);   
+    
+    return  queue; 
+  }
+
+  // Main method
+  public static void main(String[] args) {
+  
+    //QueueHead is inited
+    String inntQueueHead = setQueueHead();
+    //QueueHead is getted
+    Queue<String> getQueueHead = enQueue(inntQueueHead);
+    System.out.println("Queue head=>>" + getQueueHead);
+    //QueueHead is removed
+    deQueue();
+    //
+  }
+}
