@@ -1,0 +1,18 @@
+
+Countly bills itself as a "secure web analytics" platform. While I can't vouch for its security, 
+Countly does a solid job of collecting and presenting data about your site and its visitors.
+Heavily targeting marketing organizations, Countly tracks data that is important to marketers. 
+That information includes site visitors' transactions, as well as which campaigns and sources led visitors to your site. 
+You can also create metrics that are specific to your business. 
+Countly doesn't forgo basic web analytics; it also keeps track of the number of visitors on your site, 
+where they're from, which pages they visited, and more.
+You can use the hosted version of Countly or grab the source code from GitHub and self-host the application.
+And yes, there are differences between the hosted and self-hosted versions of Countly.
+
+Below is my test website
+user:xuliang482@gmail.com
+pass:1qaz2wsx
+https://try.count.ly/login
+
+this web analytics platform is open source, meet the needs of the problem
+please confirm to that
